@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <h1 style="text-align: center;">NEWS</h1>
+    <div class="container">
+
+        <div class="row" id="listNews">
+
+
+        </div>
+
+        <div style="margin-top: 30px;">
+            <h3>Add new news:</h3>
+            <div class="form-group">
+                <label>Title:</label>
+                <input type="text" class="form-control" id="txtTitle" placeholder="Enter title">
+            </div>
+            <div class="form-group">
+                <label>Image URL:</label>
+                <input type="text" class="form-control" id="txtURL" placeholder="Enter URL image">
+            </div>
+            <div class="form-group">
+                <label>Date's news</label>
+                <input type="date" class="form-control" id="txtDate">
+            </div>
+            <div class="form-group">
+                <label>News</label>
+                <textarea class="form-control" id="txtDescription" placeholder="Enter news's text..."></textarea>
+            </div>
+            <button type="button" onclick="postNews()" class="btn btn-primary">Submit</button>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="news.js"></script>
+
+</html>
